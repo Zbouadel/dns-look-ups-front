@@ -1,0 +1,26 @@
+<label class="progress-container">
+    <div class="progress-bar" [style.width]="progress + '%'">upload</div>
+    <input type="file" (change)="changeFile($event)" class="upload-input"/>
+</label>
+
+@if (warningMessage) {
+    <div class="warning-msg">
+        <i class="fa fa-warning"></i>
+        {{warningMessage}}
+    </div>
+}
+
+@if(errorMessage){ 
+    <div class="error-msg">
+        <i class="fa fa-times-circle"></i>
+        {{errorMessage}}
+    </div>
+}
+
+
+@if (sucessMessage) {
+    <div class="success-msg">
+        <i class="fa fa-check"></i>
+        {{sucessMessage}}
+    </div>
+}

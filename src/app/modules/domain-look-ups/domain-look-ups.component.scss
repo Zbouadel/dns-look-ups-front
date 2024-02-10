@@ -1,0 +1,55 @@
+.progress-container {
+    position: relative;
+    width: 100%;
+    display: flex;
+    height: 20px;
+    background-color: #f0f0f0;
+    cursor: pointer;
+
+}
+
+.progress-bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: #4caf50;
+    cursor: pointer;
+    transition: width 0.3s;
+}
+
+.upload-input {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    cursor: pointer;
+}
+
+
+
+@import url('//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css');
+
+.info-msg,
+.success-msg,
+.warning-msg,
+.error-msg {
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 3px 3px 3px 3px;
+}
+
+.warning-msg {
+  color: #9F6000;
+  background-color: #FEEFB3;
+}
+.error-msg {
+  color: #D8000C;
+  background-color: #FFBABA;
+}
+
+.success-msg {
+    color: #270;
+    background-color: #DFF2BF;
+  }
